@@ -4,25 +4,35 @@
     box-sizing: border-box;
 }
 
+/* Main section (top section) */
+
 #main{
     height: calc(100vh - 75px); 
-}
-
-#player{
-    height: 75px;
-    background-color: rgb(53, 53, 53);
 }
 
 .main-container{
     height: 100%;
     display: flex;
-    background-color: rgb(25, 25, 45);
 }
+
+/* Sidebar */
 
 .sidebar{
     width: 200px;
     height: calc(100vh - 75px);
     background-color: rgb(15, 14, 14);
+}
+
+/* Central content */
+
+.central-content{
+    width: calc(100vw - 200px);
+    background-color: rgb(25, 25, 45);
+    overflow-y: auto;
+}
+
+.album-content{
+    margin-top: 80px;
 }
 
 header{
@@ -31,3 +41,30 @@ header{
     position: fixed;
     width: 100%;
 }
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    width: 200px;
+    margin: 10px;
+    background-color: red;
+    height: 200px;
+}
+
+/* PLayer  */
+
+#player{
+    height: 75px;
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+
