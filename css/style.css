@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 /***** UTILITY *****/
+
+.content-column{
+    margin: 10px;
+    padding: 10px;
+}
 
 .d-flex{
     display: flex;
@@ -90,6 +99,25 @@
 
 ul{
     list-style: none;
+}
+
+.playlist{
+    color: white;
+    text-transform: uppercase;
+}
+
+.square{
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    position: relative;
+}
+
+.plus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Central content */
