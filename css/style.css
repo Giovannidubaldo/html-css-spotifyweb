@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/***** UTILITY *****/
+
 /* Main section (top section) */
 
 #main{
@@ -52,10 +54,10 @@ header{
 }
 
 .col{
-    width: 200px;
+    width: calc(100% / 6 - 20px);
     margin: 10px;
     background-color: red;
-    height: 200px;
+    height: 150px;
 }
 
 /* PLayer  */
@@ -65,6 +67,21 @@ header{
     background-color: rgb(37, 37, 37);
 }
 
+/***** RESPONSIVE *****/
 
+@media screen and (max-width: 768px) {
+    .row{
+        flex-wrap: wrap;
+    }
 
+    .col{
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .col{
+        width: calc(100% / 2 - 20px);
+    }
+}
 
