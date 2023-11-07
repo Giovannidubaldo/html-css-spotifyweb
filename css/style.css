@@ -3,3 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#main{
+    height: calc(100vh - 75px); 
+}
+
+#player{
+    height: 75px;
+    background-color: rgb(53, 53, 53);
+}
+
+.main-container{
+    height: 100%;
+    display: flex;
+    background-color: rgb(25, 25, 45);
+}
+
+.sidebar{
+    width: 200px;
+    height: calc(100vh - 75px);
+    background-color: rgb(15, 14, 14);
+}
+
+header{
+    height: 75px;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+}
