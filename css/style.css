@@ -6,6 +6,45 @@
 
 /***** UTILITY *****/
 
+.d-flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.margin-top-30{
+    margin-top: 30px;
+}
+
+/***** ANIMATION *****/
+
+.button-upgrade{
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 10px;
+}
+
+.img-full{
+    width: 100%;
+}
+
 /* Main section (top section) */
 
 #main{
@@ -23,6 +62,12 @@
     width: 200px;
     height: calc(100vh - 75px);
     background-color: rgb(15, 14, 14);
+}
+
+.logo-spotify{
+    width: 150px;
+    height: 75px;
+    margin-left: 10px;
 }
 
 /* Central content */
