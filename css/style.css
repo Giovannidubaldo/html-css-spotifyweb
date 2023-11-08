@@ -88,6 +88,10 @@ body{
     width: 50%;
 }
 
+.hidden{
+    display: none;
+}
+
 /***** BODY *****/
 
 /* Main section (top section) */
@@ -113,8 +117,12 @@ body{
 /* Sidebar top */
 
 .logo-spotify{
-    width: 150px;
-    height: 75px;
+    width: calc(100% - 40px);
+    height: calc(75px - 20px);
+}
+
+.icon-sidebar{
+    width: 100%;
 }
 
 ul{
@@ -256,13 +264,49 @@ header{
     .col{
         width: calc(100% / 4 - 20px);
     }
-
-
 }
 
 @media screen and (max-width: 576px) {
     .col{
         width: calc(100% / 2 - 20px);
     }
+
+    .hidden{
+        display: block;
+    }
+
+    .show{
+        display: none;
+    }
+
+    .sidebar{
+        width: 100px;
+    }
+
+    .central-content{
+        width: calc(100vw - 100px);
+    }
+
+    .container-header{
+        width: calc(100vw - 100px);
+    }
+
+    .logo-spotify{
+        height: 50px;
+        width: calc(100px - 40px);
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-sidebar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .download,
+    .profile{
+        justify-content: center;
+    }
+
 }
 
