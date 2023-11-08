@@ -185,6 +185,11 @@ header{
     width: 100%;
 }
 
+.container-header{
+    width: calc(100vw - 200px);
+    margin-right: 10px;
+}
+
 /* Ul central content */
 
 .ul-central{
