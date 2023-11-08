@@ -31,6 +31,10 @@ body{
     align-items: center;
 }
 
+.justify-between{
+    justify-content: space-between;
+}
+
 .margin-top-10{
     margin-top: 10px;
 }
@@ -53,8 +57,16 @@ body{
 
 /***** TEXT-STYLE *****/
 
+.text-center{
+    text-align: center;
+}
+
 .color-grey{
     color: grey;
+}
+
+.color-white{
+    color: white;
 }
 
 /***** ANIMATION *****/
@@ -70,6 +82,10 @@ body{
 
 .img-full{
     width: 100%;
+}
+
+.img-50{
+    width: 50%;
 }
 
 /* Main section (top section) */
@@ -89,16 +105,23 @@ body{
     width: 200px;
     height: calc(100vh - 75px);
     background-color: rgb(15, 14, 14);
+    flex-direction: column;
 }
+
+/* Sidebar top */
 
 .logo-spotify{
     width: 150px;
     height: 75px;
-    margin-left: 10px;
 }
 
 ul{
     list-style: none;
+}
+
+.ul-playlist{
+    height: 20vh;
+    overflow-y: auto;
 }
 
 .playlist{
@@ -118,6 +141,14 @@ ul{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Sidebar bottom */
+
+.download{
+    height: 20px;
+    width: 100%;
+    font-size: 10px;
 }
 
 /* Central content */
@@ -160,6 +191,8 @@ header{
 #player{
     height: 75px;
     background-color: rgb(37, 37, 37);
+    position: fixed;
+    width: 100%;
 }
 
 /***** RESPONSIVE *****/
@@ -172,6 +205,8 @@ header{
     .col{
         width: calc(100% / 4 - 20px);
     }
+
+
 }
 
 @media screen and (max-width: 576px) {
