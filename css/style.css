@@ -92,6 +92,18 @@ body{
     display: none;
 }
 
+.hover-white:hover{
+    color: white;
+}
+
+button:hover{
+    font-size: 15px;
+}
+
+.square:hover{
+    background-color: white;
+}
+
 /***** BODY *****/
 
 /* Main section (top section) */
