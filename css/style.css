@@ -151,6 +151,18 @@ ul{
     font-size: 10px;
 }
 
+.profile{
+    height: 30px;
+    width: 100%;
+}
+
+.img-profile{
+    background-color: grey;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+}
 /* Central content */
 
 .central-content{
