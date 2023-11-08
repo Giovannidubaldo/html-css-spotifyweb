@@ -104,6 +104,16 @@ button:hover{
     background-color: white;
 }
 
+.album:hover{
+    filter: grayscale(80%);
+}
+
+.album:hover .circle-play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /***** BODY *****/
 
 /* Main section (top section) */
@@ -226,7 +236,7 @@ header{
     width: 50%;
 }
 
-/* Recent played */
+/* Recently played */
 
 .container{
     width: 100%;
@@ -245,6 +255,17 @@ header{
 
 .album{
     width: 100%;
+    position: relative;
+}
+
+.circle-play{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0%;
+    left: 0%;
+    color: white;
 }
 
 .album img{
