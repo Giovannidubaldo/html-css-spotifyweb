@@ -69,6 +69,14 @@ body{
     color: white;
 }
 
+.font-size-20{
+    font-size: 20px;
+}
+
+.font-size-10{
+    font-size: 10px;
+}
+
 /***** ANIMATION *****/
 
 .button-upgrade{
@@ -112,6 +120,18 @@ button:hover{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.music-controls ul:hover{
+    cursor: pointer;
+}
+
+.time-bar:hover .small-time-bar{
+    background-color: greenyellow;
+}
+
+.time-bar:hover .circle-time-bar{
+    display: flex;
 }
 
 /***** BODY *****/
@@ -231,9 +251,12 @@ header{
     margin-left: 10px;
 }
 
-.hr-evidenza{
-    background-color: greenyellow;
+.subtext{
+    height: 4px;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: greenyellow;
 }
 
 /* Recently played */
@@ -267,6 +290,7 @@ header{
     left: 0%;
     color: white;
     background-color: rgba(0,0,0,0.5);
+    font-size: 30px;
 }
 
 .album img{
@@ -291,11 +315,15 @@ header{
     align-items: center;
 }
 
+/* Player col left */
+
 .col-25{
     width: 25%;
     height: 50px;
     background-color: purple;
 }
+
+/* Player col center */
 
 .col-50{
     width: 50%;
@@ -304,6 +332,42 @@ header{
 
 .ul-music li{
     margin-left: 10px;
+}
+
+.player-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    align-items: center;
+}
+
+.time-bar{
+    height: 4px;
+    width: 80%;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.small-time-bar{
+    height: 4px;
+    width: 20%;
+    background-color: lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle-time-bar{
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: none;
 }
 
 /***** RESPONSIVE *****/

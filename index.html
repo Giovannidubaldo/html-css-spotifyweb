@@ -91,7 +91,7 @@
                     <ul class="d-flex justify-center color-grey ul-central">
                         <li class="hover-white">
                             in evidenza
-                            <hr class="hr-evidenza">
+                            <div class="subtext"></div>
                         </li>
                         <li class="hover-white">podcast</li>
                         <li class="hover-white">generi e mood</li>
@@ -224,19 +224,37 @@
 
     <!-- Player (bottom section) -->
     <div id="player">
+
+        <!-- Player col left -->
         <div class="col-25"></div>
+
+        <!-- Player col center -->
         <div class="col-50">
             <div class="music-controls">
                 <ul class="d-flex justify-center color-white ul-music">
                     <li><i class="fa-solid fa-shuffle"></i></li>
                     <li><i class="fa-solid fa-backward-step"></i></li>
-                    <li><i class="fa-regular fa-circle-play"></i></li>
+                    <li><i class="fa-regular fa-circle-play font-size-20"></i></li>
                     <li><i class="fa-solid fa-forward-step"></i></li>
                     <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
                 </ul>
             </div>
-            .
+            <div class="player-bar">
+                <div class="minore-time">
+                    <p class="color-white font-size-10">0:25</p>
+                </div>
+                <div class="time-bar">
+                    <div class="small-time-bar">
+                        <div class="circle-time-bar"></div>
+                    </div>
+                </div>
+                <div class="max-time">
+                    <p class="color-white font-size-10">4:35</p>
+                </div>
+            </div>
         </div>
+
+        <!-- Player col right -->
         <div class="col-25"></div>
     </div>
     
