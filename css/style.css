@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;;
 }
 
 /***** UTILITY *****/
@@ -94,24 +94,24 @@ body{
 
 .hover-white:hover{
     color: white;
+    cursor: pointer;
 }
 
 button:hover{
     font-size: 15px;
+    cursor: pointer;
 }
 
 .square:hover{
     background-color: white;
-}
-
-.album:hover{
-    filter: grayscale(80%);
+    cursor: pointer;
 }
 
 .album:hover .circle-play{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 /***** BODY *****/
@@ -266,6 +266,7 @@ header{
     top: 0%;
     left: 0%;
     color: white;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .album img{
@@ -285,6 +286,21 @@ header{
     background-color: rgb(37, 37, 37);
     position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-25{
+    width: 25%;
+    height: 50px;
+    background-color: purple;
+}
+
+.col-50{
+    width: 50%;
+    height: 50px;
+    background-color: red;
 }
 
 /***** RESPONSIVE *****/
