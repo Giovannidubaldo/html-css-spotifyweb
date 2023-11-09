@@ -111,7 +111,6 @@ button:hover{
 }
 
 .square:hover{
-    background-color: white;
     cursor: pointer;
 }
 
@@ -320,7 +319,6 @@ header{
 .col-25{
     width: 25%;
     height: 50px;
-    background-color: purple;
 }
 
 .play-left-now{
@@ -340,9 +338,10 @@ header{
    justify-content: center;
 }
 
-.col-25 .play-left-icons{
+.play-left-icons{
     width: 30%;
     height: 50px;
+    cursor: pointer;
 }
 
 /* Player col center */
@@ -361,6 +360,7 @@ header{
     justify-content: space-between;
     height: 50%;
     align-items: center;
+    margin: 0 20px;
 }
 
 .time-bar{
@@ -470,6 +470,14 @@ header{
     .download,
     .profile{
         justify-content: center;
+    }
+
+    .play-left-icons{
+        display: block;
+    }
+
+    .play-left-icons i{
+        margin-left: 0;
     }
 
 }
