@@ -300,7 +300,10 @@ header{
 .col-50{
     width: 50%;
     height: 50px;
-    background-color: red;
+}
+
+.ul-music li{
+    margin-left: 10px;
 }
 
 /***** RESPONSIVE *****/
