@@ -370,6 +370,24 @@ header{
     display: none;
 }
 
+/* Player col right */
+
+.right-bar{
+    height: 4px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.small-right-bar{
+    height: 4px;
+    width: 20%;
+    background-color: lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /***** RESPONSIVE *****/
 
 @media screen and (max-width: 768px) {
