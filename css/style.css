@@ -100,29 +100,31 @@ body{
     display: none;
 }
 
+.hover-white:hover,
+button:hover,
+.square:hover,
+.album:hover .circle-play,
+.music-controls ul:hover,
+.play-left-icons,
+.time-bar,
+.right-bar,
+.small-right-bar,
+.small-time-bar{
+    cursor: pointer;
+}
+
 .hover-white:hover{
     color: white;
-    cursor: pointer;
 }
 
 button:hover{
     font-size: 15px;
-    cursor: pointer;
-}
-
-.square:hover{
-    cursor: pointer;
 }
 
 .album:hover .circle-play{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-}
-
-.music-controls ul:hover{
-    cursor: pointer;
 }
 
 .time-bar:hover .small-time-bar{
@@ -159,7 +161,7 @@ button:hover{
 
 .logo-spotify{
     width: calc(100% - 40px);
-    height: calc(75px - 20px);
+    height: 55px;
 }
 
 .icon-sidebar{
@@ -341,7 +343,6 @@ header{
 .play-left-icons{
     width: 30%;
     height: 50px;
-    cursor: pointer;
 }
 
 /* Player col center */
@@ -368,7 +369,6 @@ header{
     width: 80%;
     background-color: gray;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .small-time-bar{
@@ -376,7 +376,6 @@ header{
     width: 20%;
     background-color: lightgray;
     border-radius: 5px;
-    cursor: pointer;
     position: relative;
 }
 
@@ -399,7 +398,6 @@ header{
     width: 100px;
     background-color: gray;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .small-right-bar{
@@ -407,7 +405,6 @@ header{
     width: 20%;
     background-color: lightgray;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 /***** RESPONSIVE *****/
@@ -479,6 +476,5 @@ header{
     .play-left-icons i{
         margin-left: 0;
     }
-
 }
 
