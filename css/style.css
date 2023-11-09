@@ -109,7 +109,8 @@ button:hover,
 .time-bar,
 .right-bar,
 .small-right-bar,
-.small-time-bar{
+.small-time-bar,
+.underline:hover{
     cursor: pointer;
 }
 
@@ -133,6 +134,10 @@ button:hover{
 
 .time-bar:hover .circle-time-bar{
     display: flex;
+}
+
+.underline:hover{
+    text-decoration: underline;
 }
 
 /***** BODY *****/
